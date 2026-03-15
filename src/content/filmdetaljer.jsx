@@ -7,19 +7,19 @@ export default function FilmDetaljer() {
 
   return (
     <main>
-    <nav>
+    <nav style={{marginBottom: "15px"}}>
         <Link to="/">Tilbake</Link>
       </nav>
 
       <article>
         <figure>
-          <img src={filmData.Poster} />
+          <img src={filmData.Poster} style={{width: "250px"}} />
         </figure>
 
         <section>
-          <h1>spanTITTEL: <br /> {filmData.Title}</h1>
-            <p>ÅR: <br /> {filmData.Year}</p>
-          <p>Besrkivelse: <br /> {filmData.Plot}</p>
+          <h1>{filmData.Title}</h1>
+            <p>{filmData.Year}</p>
+          <p>{filmData.Plot}</p>
         </section>
       </article>
     </main>

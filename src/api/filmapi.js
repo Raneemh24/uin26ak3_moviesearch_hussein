@@ -3,11 +3,14 @@ const url = "https://www.omdbapi.com/"
 
 export async function sokFilmer(tekst) {
   if (tekst == null || tekst.length < 3) {
-    return null
+    return []
   }
   const respons = await fetch(url + "?s=" + tekst + "&apikey=" + apiNokkel)
   const data = await respons.json()
-  return data.Search
+  if (data.Search) {
+    return data.Search
+  }
+  return []
 }
 
 export async function hentBondFilmer() {

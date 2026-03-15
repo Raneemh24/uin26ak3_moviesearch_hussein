@@ -1,8 +1,20 @@
 import { useState, useEffect } from "react"
-import { hentBondFilmer, sokFilmer } from "../api"
+import { hentBondFilmer, sokFilmer } from "../api/filmapi"
 import FilmKort from "./filmkort"
 
 export default function Forside() {
+
+  const headerStyle = {
+    textAlign: "center",
+    marginBottom: "20px"
+  }
+
+  const inputStyle = {
+    padding: "8px",
+    width: "300px",
+    fontSize: "16px"
+  }
+
   const [filmer, setFilmer] = useState([])
   const [soketekst, setSoketekst] = useState("")
 
@@ -21,13 +33,14 @@ export default function Forside() {
 
   return (
     <main>
-      <header>
+      <header style={headerStyle}>
         <h1>Film Søk</h1>
         <input
         type="text"
         placeholder="Søk etter film"
         value={soketekst}
         onChange={handleSok}
+        style={inputStyle}
         />
       </header>
       <section>

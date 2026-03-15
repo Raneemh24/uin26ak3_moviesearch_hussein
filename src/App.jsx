@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Forside from "./components/forside"
-import FilmDetaljer from "./components/filmdetaljer"
+import Forside from "./content/forside"
+import FilmDetaljer from "./content/filmdetaljer"
 import "./App.css"
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Forside />} />
-        <Route path="/:movie" element={<FilmDetaljer />} />
+        <Route path="/" element={<Forside/>} />
+        <Route path="/:movie" element={<FilmDetaljer/>} />
       </Routes>
     </BrowserRouter>
   )
