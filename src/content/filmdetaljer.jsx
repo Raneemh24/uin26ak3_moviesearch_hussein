@@ -7,13 +7,13 @@ export default function FilmDetaljer() {
 
   return (
     <main>
-    <nav style={{marginBottom: "15px"}}>
+    <nav style={{marginBottom: "13px"}}>
         <Link to="/">Tilbake</Link>
       </nav>
 
       <article>
         <figure>
-          <img src={filmData.Poster} style={{width: "250px"}} />
+          <img src={filmData.Poster} style={{width: "238px"}} />
         </figure>
 
         <section>

@@ -6,13 +6,13 @@ export default function Forside() {
 
   const headerStyle = {
     textAlign: "center",
-    marginBottom: "20px"
+    marginBottom: "18px"
   }
 
   const inputStyle = {
-    padding: "8px",
-    width: "300px",
-    fontSize: "16px"
+    padding: "7px",
+    width: "310px",
+    fontSize: "15px"
   }
 
   const [filmer, setFilmer] = useState([])

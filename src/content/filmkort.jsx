@@ -4,10 +4,10 @@ export default function FilmKort({ film }){
 
   const kortStyle = {
     background: "white",
-    width: "200px",
+    width: "195px",
     border: "1px solid #ccc",
-    padding: "10px",
-    margin: "0 auto 10px"
+    padding: "12px",
+    margin: "0 auto 8px"
   }
 
   return (
@@ -17,8 +17,8 @@ export default function FilmKort({ film }){
         <img src={film.Poster} alt={film.Title} style={{width: "100%"}} />
         </figure>
         <header>
-          <h2 style={{fontSize: "14px", margin: "5px 0"}}>{film.Title}</h2>
-            <time style={{color: "gray", fontSize: "13px"}}>{film.Year}</time>
+          <h2 style={{fontSize: "13px", margin: "6px 0"}}>{film.Title}</h2>
+            <time style={{color: "gray", fontSize: "12px"}}>{film.Year}</time>
         </header>
       </Link>
     </article>
